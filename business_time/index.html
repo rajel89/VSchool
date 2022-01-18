@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav_tab.css" />
+    <link rel="stylesheet" href="login_form.css" />
+    <link rel="stylesheet" href="mobile_nav_tab.css" />
+</head>
+
+<body>
+    <!-- Tab menu -->
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="portfoliohtml.html">Portfolio</a></li>
+        <li><a href="aboutpage.html">About</a></li>
+        <li><a href="contactpage.html">Contact</a></li>
+    </ul>
+
+    <h1>The Hour Glass</h1>
+    <hr>
+    <p id="paragraph">lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem
+        ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
+
+
+
+    <!-- This is the block of code for the login form at the home screem -->
+
+    <div class="login_container">
+        <label for="uname"><b></b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b></b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+
+   
+
 
 </body>
+
 </html>

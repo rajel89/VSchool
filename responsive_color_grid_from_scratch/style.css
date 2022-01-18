@@ -7,7 +7,7 @@
 .box5{background:#E76E34;}
 
 
-@media (min-width: 768px){
+@media (min-width: 768px){ 
   .container{
     height: 350px;
     display:grid;

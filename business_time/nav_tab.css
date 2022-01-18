@@ -1,0 +1,52 @@
+/* css styling for the menu tab for a non mobile platform */
+
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+  }
+
+  li a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: left 100px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(66, 63, 63);
+  }
+
+
+@media (max-width: 768px) {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+  }
+
+  li a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: left 100px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(66, 63, 63);
+  }
+}
