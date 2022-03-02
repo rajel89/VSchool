@@ -25,10 +25,37 @@ window.addEventListener("load", () => {
 		item_input_el.value = item;
 		item_input_el.setAttribute('readonly', 'readonly');
 
+
+
+
     item_content_el.appendChild(item_input_el);
+
+
+    
+
+    const item_toAdd_el = document.createElement('div');
+		item_toAdd_el.classList.add('actions');
+
+    const item_edit_el = document.createElement('button');
+		item_edit_el.classList.add('edit');
+		item_edit_el.innerText = 'Edit';
+
+		const item_delete_el = document.createElement('button');
+		item_delete_el.classList.add('x');
+		item_delete_el.innerText = 'x';
+
+    item_toAdd_el.appendChild(item_edit_el);
+
+    
+
+		item_toAdd_el.appendChild(item_delete_el);
+
+		item_el.appendChild(item_toAdd_el);
+
 
     itemList.appendChild(item_el);
 
     input.value = "";
+    
   });
 });
