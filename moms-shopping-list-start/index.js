@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
     item_content_el.appendChild(item_input_el);
 
 
-    
+
 
     const item_toAdd_el = document.createElement('div');
 		item_toAdd_el.classList.add('actions');
@@ -57,5 +57,16 @@ window.addEventListener("load", () => {
 
     input.value = "";
     
+    item_edit_el.addEventListener('click', (e) => {
+			if (item_edit_el.innerText.toLowerCase() == "edit") {
+				item_edit_el.innerText = "Save";
+				item_input_el.removeAttribute("readonly");
+				item_input_el.focus();
+			} else {
+				item_edit_el.innerText = "Edit";
+				item_input_el.setAttribute("readonly", "readonly");
+			}
+		});
+
   });
 });
