@@ -16,7 +16,14 @@ window.addEventListener("load", () => {
 
     item_el.appendChild(item_content_el);
 
+    
+
     const item_input_el = document.createElement("input");
+
+    item_input_el.classList.add('text');
+		item_input_el.type = 'text';
+		item_input_el.value = item;
+		item_input_el.setAttribute('readonly', 'readonly');
 
     item_content_el.appendChild(item_input_el);
 
