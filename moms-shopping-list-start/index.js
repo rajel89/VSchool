@@ -67,6 +67,11 @@ window.addEventListener("load", () => {
 				item_input_el.setAttribute("readonly", "readonly");
 			}
 		});
+    
+		item_delete_el.addEventListener('click', (e) => {
+			itemList.removeChild(item_el);
 
   });
+});
+
 });
