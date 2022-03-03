@@ -1,5 +1,76 @@
-body{
-    background-color:beige;
-    text-align: center;
+body {
+  background-color: beige;
+  text-align: center;
+  grid-gap: 50px;
+
+}
+
+
+.grid-container {
     
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    background-color: beige;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color:beige);
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+
+/* France */
+
+.france-container {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 1px #989;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+.france-blue {
+  grid-column: 1/2;
+  grid-row: 1;
+  background-color: blue;
+}
+.france-white {
+  grid-column: 2/3;
+  grid-row: 1;
+  background-color: white;
+}
+.france-red {
+  grid-column: 3/3;
+  grid-row: 1;
+  background-color: red;
+}
+
+
+/* Germany */
+
+.germany-container {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 1px #989;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+}
+.germany-black {
+  grid-row: 1/2;
+  background-color: black;
+}
+.germany-red {
+  grid-row: 2/3;
+  background-color: red;
+}
+.germany-yellow {
+  grid-row: 3/4;
+  background-color: yellow;
 }

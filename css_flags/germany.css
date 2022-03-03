@@ -1,27 +1,27 @@
-.france-container {
+.germany-container {
     width: 300px;
     height: 200px;
     box-shadow: 0px 0px 90px 1px #989;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
     position: relative;
     
 }
-.france-blue{
-    grid-column:1/2;
-    grid-row: 1;
-    background-color: blue;
+.germany-black{
+    
+    grid-row: 1/2;
+    background-color: black;
     
 }
-.france-white{
-    grid-column:2/3;
-    grid-row: 1;
-    background-color: white;
+.germany-red{
+
+    grid-row: 2/3;
+    background-color: red;
 
 }
-.france-red{
-    grid-column:3/3;
-    grid-row: 1;
-    background-color: red;
+.germany-yellow{
+   
+    grid-row: 3/4;
+    background-color: yellow;
 }
