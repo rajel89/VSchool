@@ -144,6 +144,6 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
 
 
 for (var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
-    if(peopleWhoWantToSeeMadMaxFuryRoad[i].age<=40)
-    console.log("Hi, I am " + peopleWhoWantToSeeMadMaxFuryRoad[i] + " I am " + peopleWhoWantToSeeMadMaxFuryRoad[i].age + " year old");
+    if(peopleWhoWantToSeeMadMaxFuryRoad[i].age<=18)
+    console.log("Hi, I am " + peopleWhoWantToSeeMadMaxFuryRoad[i].name + " I am " + peopleWhoWantToSeeMadMaxFuryRoad[i].age + " year old");
 }
