@@ -70,7 +70,7 @@ var users = [
   
     
     for (var i = 0; i < users.length; i++) {
-        console.log("Hi, I am " + users[i] + " I am " + users[i].age + " year old");
+        console.log("Hi, I am " + users[i].name + " I am " + users[i].age + " year old");
   }
   
 
