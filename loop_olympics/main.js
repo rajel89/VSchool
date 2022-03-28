@@ -59,14 +59,14 @@ console.log("//3. Write a for loop that will push every other fruit to an array.
 //3. Write a for loop that will push every other fruit to an array.
 
 
-// const fruit2 = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
-// let newFruit = [];
-// for(var i = 0; i <fruit2.length; i++){
-//   if( i % 2 !== 0){
-//     newFruit.push(fruit2[i])
-//   }
-// console.log(newFruit)
-// }
+const fruit2 = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+let newFruit = [];
+for(var i = 0; i <fruit2.length; i++){
+  if( i % 2 !== 0){
+    newFruit.push(fruit2[i])
+  }
+console.log(newFruit)
+}
 
 
 
@@ -133,7 +133,7 @@ for(let i = 0; i < peopleArray.length; i++){
 console.log("\n 2. Write a loop that pushes the names into a `names` array, and the occupations into an `occupations` array.")
 //2. Write a loop that pushes the names into a `names` array, and the occupations into an `occupations` array.
 for(let i = 0; i < peopleArray.length; i++){
-  console.log("\n name: " + peopleArray[i].name + "; Occupartion: " + peopleArray[i].occupation)
+  console.log("\n name: " + peopleArray[i].name)
   console.log("  Occupartion: " + peopleArray[i].occupation + "\n")
 }
 
@@ -142,5 +142,7 @@ for(let i = 0; i < peopleArray.length; i++){
 //3. Write a loop that pushes every other name to an array starting with the first person, in this case "Harrison Ford", and every other occupation to *another* array starting with, in this case, "Singer".
 
 //Think about what good names for the arrays would be. Since it will be an array of each name or occupation, the plurals of name and occupation would be appropriate.
+
+
 
 
