@@ -8,57 +8,57 @@ window.addEventListener("load", () => {
 
     const item = input.value;
 
-    const item_el = document.createElement("div");
-    item_el.classList.add("item");
+    const itemEl = document.createElement("div");
+    itemEl.classList.add("item");
 
-    const item_content_el = document.createElement("div");
-    item_content_el.classList.add("content");
+    const itemContentEl = document.createElement("div");
+    itemContentEl.classList.add("content");
 
-    item_el.appendChild(item_content_el);
+    itemEl.appendChild(itemContentEl);
 
-    const item_input_el = document.createElement("input");
+    const itemInputEl = document.createElement("input");
 
-    item_input_el.classList.add("text");
-    item_input_el.type = "text";
-    item_input_el.value = item;
-    item_input_el.setAttribute("readonly", "readonly");
+    itemInputEl.classList.add("text");
+    itemInputEl.type = "text";
+    itemInputEl.value = item;
+    itemInputEl.setAttribute("readonly", "readonly");
 
-    item_content_el.appendChild(item_input_el);
+    itemContentEl.appendChild(itemInputEl);
 
-    const item_toAdd_el = document.createElement("div");
-    item_toAdd_el.classList.add("actions");
+    const itemToAddEl = document.createElement("div");
+    itemToAddEl.classList.add("actions");
 
-    const item_edit_el = document.createElement("button");
-    item_edit_el.classList.add("edit");
-    item_edit_el.innerText = "Edit";
+    const itemEditEl = document.createElement("button");
+    itemEditEl.classList.add("edit");
+    itemEditEl.innerText = "Edit";
 
-    const item_delete_el = document.createElement("button");
-    item_delete_el.classList.add("x");
-    item_delete_el.innerText = "x";
+    const itemDeleteEl = document.createElement("button");
+    itemDeleteEl.classList.add("x");
+    itemDeleteEl.innerText = "x";
 
-    item_toAdd_el.appendChild(item_edit_el);
+    itemToAddEl.appendChild(itemEditEl);
 
-    item_toAdd_el.appendChild(item_delete_el);
+    itemToAddEl.appendChild(itemDeleteEl);
 
-    item_el.appendChild(item_toAdd_el);
+    itemEl.appendChild(itemToAddEl);
 
-    itemList.appendChild(item_el);
+    itemList.appendChild(itemEl);
 
     input.value = "";
 
-    item_edit_el.addEventListener("click", (e) => {
-      if (item_edit_el.innerText.toLowerCase() == "edit") {
-        item_edit_el.innerText = "Save";
-        item_input_el.removeAttribute("readonly");
-        item_input_el.focus();
+    itemEditEl.addEventListener("click", (e) => {
+      if (itemEditEl.innerText.toLowerCase() == "edit") {
+        itemEditEl.innerText = "Save";
+        itemInputEl.removeAttribute("readonly");
+        itemInputEl.focus();
       } else {
-        item_edit_el.innerText = "Edit";
-        item_input_el.setAttribute("readonly", "readonly");
+        itemEditEl.innerText = "Edit";
+        itemInputEl.setAttribute("readonly", "readonly");
       }
     });
 
-    item_delete_el.addEventListener("click", (e) => {
-      itemList.removeChild(item_el);
+    itemDeleteEl.addEventListener("click", (e) => {
+      itemList.removeChild(itemEl);
     });
   });
 });
