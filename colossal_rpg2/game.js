@@ -72,16 +72,36 @@ function fight()
     console.log("Player: " + playerPower + ", Enemy: " + enemyPower);
     return false;
   }
+  else
+  {
+    var playerHealth = player.updateHealth();
+    var enemyHealth = enemy.updateHealth();
+    var prize = player.getPrize();
+    if (playerHealth >= 0 && enemyHealth >= 0)
 
+    {
+      console.log("\nAttacking with " + player.getWeapon());
+      console.log("Enemy health is " + enemy.getHP());
+      console.log("Player health is " + player.getHP());
+      console.log("Good job! You survived tu duel and have won a "+ prize + " as a prize ");
+      player.addToPrizeList(prize);
+      return true;
 
+    }
+    else if (playerHealth < 0 && enemyHealth > 0 )
+    {
+      console.log("\nYou are dead!");
+      console.log(enemy.getCurrentEnemy() + "'s Attack was too much!");
+      return false;
 
+    }
+    else if (playerHealth > 0 && enemyHealth < 0 )
+    {
+      console.log("Congratuations " + player.getName() + "! You have won the Game!");
+      return false;
+    }
+  }
 }
-
-
-
-
-
-
 
 
 var choice = "";
