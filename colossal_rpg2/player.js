@@ -18,9 +18,40 @@ class Player{
         return this.hp;
 
     }
-    
+
+    randomeNum(min, max){
+        return Math.floor(Math.random()* (max - min + 1))+ min;
+    }
+
+    getprizeList()
+    {
+        return this.prizeList;
+    }
+
+    getAttackHit(){
+        var attackHit = this.randomeNum(1, 30);
+        return attackHit;
+    }
+
+    updateHealth(){
+        this.hp = this.hp - this.getAttackHit();
+        return this.hp;
+    }
+
+    playerAttack(){
+        while (this.hp > 0) { 
+            this.playerAttack();
+        }
+    }
+
+
+
+
+
 
 
 }
 
 module.exports = Player;
+
+

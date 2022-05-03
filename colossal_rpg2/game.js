@@ -1,4 +1,6 @@
 var readline = require("readline-sync");
+let Player = require('./player')
+let Enemy = require('./enemy')
 
 
 
