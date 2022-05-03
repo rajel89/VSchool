@@ -42,6 +42,29 @@ function startGame() {
 
 //function for player to run
 
+function run()
+{
+  check = Math.floor((Math.random() * 2) + 1)
+  if (check === 1 ){
+    console.log("\nYou are dead!")
+    console.log("You were not able to evade the hit from " + enemy.getCurrentEnemy() + "! ");
+    return false;
+  }
+  else
+  {
+    console.log("\nGood job, you survived that one. ")
+    return true;
+  }
+}
+
+//function for player to fight
+
+
+
+
+
+
+
 
 
 
