@@ -1,18 +1,15 @@
 var readline = require("readline-sync");
-let Player = require('./player')
-let Enemy = require('./enemy')
+let Player = require("./player");
+let Enemy = require("./enemy");
 
+function startGame() {
+  console.log("\nWelcoem to colossal adventure RGP.");
+  var name = readyline - question("\nPayer, what is your name?");
 
-
-function startGame(){
-  console.log('\nWelcoem to colossal adventure RGP.');
-  var name = readyline-question('\nPayer, what is your name?');
-
-  while(name== ""){
-    name = readline.question('\nPlease enter yoru name: ');
+  while (name == "") {
+    name = readline.question("\nPlease enter yoru name: ");
   }
 
   player.setName(name);
-  console.log('\nHello '+ name);
-
+  console.log("\nHello " + name);
 }
