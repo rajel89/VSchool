@@ -14,20 +14,16 @@ function startGame() {
   console.log("\nHello " + name);
 
   while (player.getHP() > 0 || enemy.getHP() > 0) {
-    var action = readline
-      .keyIn("\nPress 'W' to walk or 'P' to print status. ")
-      .toLowerCase();
+
+    var action = readline.keyIn("\nPress 'W' to walk or 'P' to print status. ").toLowerCase();
 
     if (action === "p") {
-      console.log(player.displayer());
-    } else if (action === "w" && enemy.doesEnemyAppear()) {
-      var attack = readline
-        .keyIn(
-          "\nYou are being attacked by a " +
-            enemy.getEnemies() +
-            " Press 'A' to attack or 'R' to run or escape"
-        )
-        .toLowerCase();
+      console.log(player.displayPlayer());
+    } 
+      else if (action === "w" && enemy.doesEnemyAppear()) {
+      
+        var attack = readline.keyIn("\nYou are being attacked by a " + enemy.getEnemies() + " Press 'A' to attack or 'R' to run or escape ").toLowerCase();
+
       if (attack === "a") 
       {
         if (!fight()) {
