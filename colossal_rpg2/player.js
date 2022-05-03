@@ -40,6 +40,36 @@ class Player {
       this.playerAttack();
     }
   }
+
+  getPrize() {
+    var prize = ["Apple", "Bandage", "Potion"];
+    var randomPrize = this.randomNum(0, 2);
+    var newPrize = prize[randomPrize];
+    return newPrize;
+  }
+
+  displayPlayer() {
+    console.log(
+      `Name: ${this.name}, HP: ${this.hp}, prizeList: ${this.prizeList}`
+    );
+  }
+
+  addToPrizeList(prize) {
+    this.prizeList.push(prize);
+  }
+
+  getWeapon() {
+    var power = ["Sword", "Bow and Arrow", "Fart Canon"];
+    var randomPower = this.randomNum(0, 2);
+    var newPower = power[randomPower];
+    return newPower;
+  }
+
+  reset() {
+    this.name = "";
+    this.hp = 100;
+    this.prizeList = [];
+  }
 }
 
 module.exports = Player;
