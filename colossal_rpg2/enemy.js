@@ -41,7 +41,7 @@ class Enemy {
   }
 
   doesEnemyAppear() {
-    var randomNum = Math.floor(math.random() * 3 + 1);
+    var randomNum = Math.floor(Math.random() * 3 + 1);
     if (randomNum === 2) {
       return true;
     } else {
