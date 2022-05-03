@@ -59,7 +59,23 @@ function run()
 
 //function for player to fight
 
+function fight()
+{
+  enemyPower = Math.floor((Math.random() * 5) + 1);
+  playerPower = Math.floor ((Math.random() * 10) + 1);
+  
+  if(playerPower <= enemyPower)
+  {
+    console.log("\nYou are dead!");
+    console.log(enemy.getCurrentEnemy() + "'s Attack was too much!");
+    console.log("Better Luck Next Time!");
+    console.log("Player: " + playerPower + ", Enemy: " + enemyPower);
+    return false;
+  }
 
+
+
+}
 
 
 
