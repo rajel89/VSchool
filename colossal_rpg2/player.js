@@ -19,7 +19,7 @@ class Player{
 
     }
 
-    randomeNum(min, max){
+    randomNum(min, max){
         return Math.floor(Math.random()* (max - min + 1))+ min;
     }
 
@@ -29,7 +29,7 @@ class Player{
     }
 
     getAttackHit(){
-        var attackHit = this.randomeNum(1, 30);
+        var attackHit = this.randomNum(1, 30);
         return attackHit;
     }
 
