@@ -49,7 +49,7 @@ class Player {
   }
 
   displayPlayer() {
-    console.log(`Name: ${this.name}, HP: ${this.hp}, \nItems: ${this.prizeList}` );
+    console.log(`Name: ${this.name}, \nHP: ${this.hp}, \nItems: ${this.prizeList}` );
   }
 
   addToPrizeList(prize) {

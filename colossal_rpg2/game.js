@@ -22,7 +22,7 @@ function startGame() {
     } 
       else if (action === "w" && enemy.doesEnemyAppear()) {
       
-        var attack = readline.keyIn("\nYou are being attacked by a " + enemy.getEnemies() + " Press 'A' to attack or 'R' to run or escape ").toLowerCase();
+        var attack = readline.keyIn("\nYou are being attacked by a " + enemy.getEnemies() + " Press 'A' to attack or 'R' to run or escape: ").toLowerCase();
 
       if (attack === "a") 
       {
@@ -39,6 +39,9 @@ function startGame() {
     }
   }
 }
+
+
+
 
 //function for player to run
 
@@ -80,10 +83,10 @@ function fight()
     if (playerHealth >= 0 && enemyHealth >= 0)
 
     {
-      console.log("\nAttacking with " + player.getWeapon());
-      console.log("Enemy health is " + enemy.getHP());
-      console.log("Player health is " + player.getHP());
-      console.log("Good job! You survived tu duel and have won a "+ prize + " as a prize ");
+      console.log("\nAttacked with " + player.getWeapon());
+      console.log("Enemy health: " + enemy.getHP());
+      console.log("Player health: " + player.getHP());
+      console.log("\nGood job! You survived the duel and have won a '"+ prize + "' as a prize ");
       player.addToPrizeList(prize);
       return true;
 
