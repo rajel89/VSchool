@@ -1,11 +1,16 @@
-// const form = document.calculator
-
-// form.addEventListener("add", function (e){
-//     e.preventDefault()
-// })
+const form = document.calculator
 
 
+form.addEventListener("add", function(event){
+    event.preventDefault()
 
-document.addEventListener.addEventListener("Add", function(e){
-    e.preventDefault()
+
+    const firstNum = form.firstInput.value
+    const secondNum = form.secondinput.value
+
+    console.log(firstNum + secondNum)
+
+
 })
+
+
