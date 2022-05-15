@@ -1,0 +1,22 @@
+
+#h1{
+    text-align: center;
+}
+
+.addition{
+    border: 2px outset black;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.multiply{
+    border: 2px outset black;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.divide{
+    border: 2px outset black;
+    background-color: lightgray;
+    text-align: center;
+}
