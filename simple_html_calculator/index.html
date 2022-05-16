@@ -13,31 +13,30 @@
 
 <body>
 
-    <div class="addition">
-        <input type="text" id="addNum1" placeholder="number">
-        <input type="text" id="addNum2" placeholder="number">
-        <input id="addResult">
-        <button onclick="add()">Add</button>
-    </div>
-    <br>
+    <div classe="calc">
+        <div class="addition">
+            <input type="number" id="addNum1" placeholder="number">
+            <input type="number" id="addNum2" placeholder="number">
+            <input id="addResult" placeholder="Result">
+            <button onclick="addBy()">Add</button>
+        </div>
+        <br>
 
-    <div class="multiply">
-        <input type="text" id="multNum1" placeholder="number" />
-        <input type="text" id="multNum2" placeholder="number" />
-        <input id="multResult" />
-        <input type="button" onClick="multiplyBy()" Value="Multiply" />
-    </div>
-    <br>
+        <div class="multiply">
+            <input type="number" id="multNum1" placeholder="number" />
+            <input type="number" id="multNum2" placeholder="number" />
+            <input id="multResult" placeholder="Result" />
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        </div>
+        <br>
 
-    <div class="divide">
-        <input type="text" id="subNum1" placeholder="number" />
-        <input type="text" id="subNum2" placeholder="number" />
-        <input id="subResult" />
-        <input type="button" onclick="subBy()" value="Subtract" />
+        <div class="divide">
+            <input type="number" id="subNum1" placeholder="number" />
+            <input type="number" id="subNum2" placeholder="number" />
+            <input id="subResult" placeholder="Result" />
+            <input type="button" onclick="subBy()" value="Subtract" />
+        </div>
     </div>
-
-    </div>
-
     <script src="index.js"></script>
 </body>
 

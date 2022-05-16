@@ -1,4 +1,4 @@
-function add() {
+function addBy() {
   var numOne, numTwo, sum;
   numOne = parseInt(document.getElementById("addNum1").value);
   numTwo = parseInt(document.getElementById("addNum2").value);

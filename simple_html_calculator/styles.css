@@ -1,22 +1,33 @@
+.calc{
+    border: 2px black;
+    background-color: bisque;
+    
+}
 
-#h1{
+h1{
     text-align: center;
 }
+
+
 
 .addition{
     border: 2px outset black;
     background-color: lightblue;
     text-align: center;
+    padding: 10px;
+
 }
 
 .multiply{
     border: 2px outset black;
     background-color: lightcoral;
     text-align: center;
+    padding: 10px;
 }
 
 .divide{
     border: 2px outset black;
     background-color: lightgray;
     text-align: center;
+    padding: 10px;
 }
