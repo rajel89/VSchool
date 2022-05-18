@@ -5,8 +5,10 @@ form.addEventListener("submit", (event) => {
     console.log("Hello World")
 
     const firstName = form.elements["firstName"].value
+    const lastName = form.elements["lastName"].value
+    const age = form.elements["age"].value
+    
 
-
-    alert(firstName)
+    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age)
 })
 
