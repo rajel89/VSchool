@@ -7,8 +7,10 @@ form.addEventListener("submit", (event) => {
     const firstName = form.elements["firstName"].value
     const lastName = form.elements["lastName"].value
     const age = form.elements["age"].value
+    const gender = form.elements["gender"].value
+    const destination = form.elements["destination"].value;
     
 
-    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age)
+    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nDestination: " + destination)
 })
 
