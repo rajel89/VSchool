@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) =>{
         }
     }
     
-    alert(checkedInputs)
+    console.log(checkedInputs)
 
 
 })
