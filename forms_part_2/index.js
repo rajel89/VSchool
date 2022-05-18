@@ -4,6 +4,7 @@ form.addEventListener("submit", (event) =>{
     event.preventDefault()
     console.log("Hello World")
 
+    
     const checkedInputs = []
 
     for(let i = 0; i < form.entertainment.length; i++){
@@ -12,7 +13,7 @@ form.addEventListener("submit", (event) =>{
         }
     }
     
-    console.log(checkedInputs)
+    alert(checkedInputs)
 
 
 })
