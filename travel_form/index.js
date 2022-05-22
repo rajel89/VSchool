@@ -10,13 +10,16 @@ form.addEventListener("submit", (event) => {
     const gender = form.elements["gender"].value
     const destination = form.elements["destination"].value;
 
-    const food=[];
-    if(form.elements["vegetarian"].checked){
-        food.push(document.getElementById("vegeratian").value);
+    const checkedInputs=[];
+
+    for(let i = 0; i < form.food.length; i++){
+    if(form.food[i].checked){
+        checkedInputs.push(form.food[i].value);
     }
 
-    
-    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nDestination: " + destination + "\nDietary Restrictions: " + food)
+}
+
+    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nDestination: " + destination + "\nDietary Restrictions: " + checkedInputs)
     
 })
 
