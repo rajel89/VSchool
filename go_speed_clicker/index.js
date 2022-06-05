@@ -4,8 +4,6 @@
 
 // **Extra credit:** Put a countdown timer (10-30 seconds) on the page that stops the user's clicks from counting towards the total after the timer ends.
 
-console.log("Hello World");
-
 
 
 function clickCounter() {
@@ -23,4 +21,6 @@ function clickCounter() {
   }
 }
 
+function timerStart(){
 
+}
