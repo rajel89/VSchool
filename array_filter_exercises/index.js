@@ -62,3 +62,26 @@ console.log(peopleWhoBelongToTheIlluminati([
 //[{ name: "Angelina Jolie", member: true},
 // { name: "Paris Hilton", member: true},
 // { name: "Bob Ziroll", member: true}]
+
+
+//5) Make a filtered list of all the people who are 
+//old enough to see The Matrix (older than 18)
+
+function ofAge(arr){
+    //your code here
+    const olderThenEighteen = arr.filter(ofAge => ofAge.age >= 18)
+    return olderThenEighteen
+
+}
+//test
+console.log(ofAge([
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+
+]));
+//=>
+//[ { name: "Angelina Jolie", age: 80 },
+//  { name: "Bob Ziroll", age: 100 }] 
