@@ -27,7 +27,7 @@ console.log(evensOnly([3,6,8,2])); ///[6,8,2]
 
 function fiveCharactersOrFewerOnly(arr){
 
-    const fiveOrFewer = arr.filter(arr => arr.length <=5);
+    const fiveOrFewer = arr.filter(arr => arr.length <= 5);
     return fiveOrFewer
 
    
