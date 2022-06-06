@@ -26,14 +26,11 @@ console.log(evensOnly([3,6,8,2])); ///[6,8,2]
 //includes those that are 5 characters or fewer in length
 
 function fiveCharactersOrFewerOnly(arr){
-    //your code here
-    let fiveOrFewer = [];
-    arr.filter(x=> {
-        if(x.length<=5){
-            fiveOrFewer.push(x);
-        }
-    })
-    console.log(fiveOrFewer)
+
+    const fiveOrFewer = arr.filter(arr => arr.length <=5);
+    return fiveOrFewer
+
+   
 }
 //test
 console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "camping"]))//["big","dog", "wolf","eaten"]
