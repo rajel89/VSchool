@@ -43,11 +43,17 @@ console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "
 
 function peopleWhoBelongToTheIlluminati(arr){
     //your code here
-    arr.filter(arr =>{
-        if(arr.member === true){
-            console.log(arr);
-        }
-    })
+
+    const trueMember = arr.filter(peopleWhoBelongToTheIlluminati => peopleWhoBelongToTheIlluminati.member = true)
+    return trueMember
+
+    //***** OR *****/
+
+    // arr.filter(arr =>{
+    //     if(arr.member === true){
+    //         console.log(arr);
+    //     }
+    // })
 
 }
 //test
@@ -69,8 +75,17 @@ console.log(peopleWhoBelongToTheIlluminati([
 
 function ofAge(arr){
     //your code here
+
     const olderThenEighteen = arr.filter(ofAge => ofAge.age >= 18)
     return olderThenEighteen
+
+    //***** OR *****/
+
+    // arr.filter(arr => {
+    //     if(arr.age>18){
+    //         console.log(arr)
+    //     }
+    // })
 
 }
 //test
