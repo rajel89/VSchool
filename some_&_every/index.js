@@ -22,3 +22,12 @@ const result1 = names.every(function(name){
 })
 
 console.log(result1)
+
+
+
+// ES6 Syntax of .every()
+console.log("ES6 Syntax of .every()")
+
+const resultInES6 = names.every(name => name[0] === "J")
+
+console.log(resultInES6)
