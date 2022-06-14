@@ -45,7 +45,7 @@ console.log(result1)
 
 
 const result2 = users.find(function(user){
-    if(user.name === "julie"){ // <--- user.name ===, instructs the syntax to look for a specific name in the array of users."
+    if(user.name === "julie"){ // <--- user.name ===, instructs the syntax to look for a specific name in the object array of users."
         return user
     }
 })
@@ -54,9 +54,16 @@ console.log(result2)
 
 
 
-// .findIndex()
+// .findIndex() 
+// <--- findIndex will return the index value of a object in the array instead of the object itself.
 
+const userIndex = users.findIndex(function(user){
+    if(user.name === "julie"){
+        return true
+    }
+})
 
+console.log(userIndex)
 
 
 
