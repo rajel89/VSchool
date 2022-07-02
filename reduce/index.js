@@ -28,4 +28,32 @@ const result = users.reduce(function(final,user){
 console.log(result)
 
 
+// 3 - reduce the array into a count of how many people voted
+console.log("3 - reduce the array into a count of how many people voted")
 
+const voters = [
+    { name: "steve", voted: true },
+    { name: "janet", voted: true },
+    { name: "rebecca", voted: false },
+    { name: "harvey", voted: true },
+]
+
+const voteCount = voters.reduce(function(final,voters){
+    if(voters.voted){
+        final++
+    }
+    return final
+},0)
+
+console.log(voteCount)
+
+
+
+const didntVoteCount = voters.reduce(function(final, voters){
+    if(!voters.voted){ // <--- the "!"  means the take the vote = false or to return the number of people who did not vote.
+        final++
+    }
+    return final
+},0)
+
+console.log(didntVoteCount)
