@@ -46,4 +46,25 @@ console.log(alphabetical(["dog", "wolf", "by", "family", "eaten"])); // ["by", "
 
 
 
+//5) Sort the objects in the array by age
+console.log("5) Sort the objects in the array by age")
+
+
+function byAge(arr5){
+    // your code here
+    return arr5.sort((a, b)=> a.age - b.age)
+
+  }
+  
+  console.log(byAge([
+      { name: "Quiet Samurai", age: 22 },
+      { name: "Arrogant Ambassador", age: 100 },
+      { name: "Misunderstood Observer", age: 2 },
+      { name: "Unlucky Swami", age: 77 }
+  ]));
+  // => [ { name: 'Misunderstood Observer', age: 2 },
+  //  { name: 'Quiet Samurai', age: 22 },
+  //  { name: 'Unlucky Swami', age: 77 },
+  //  { name: 'Arrogant Ambassador', age: 100 } ]
+
 
