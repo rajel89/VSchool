@@ -1,11 +1,9 @@
 //1) Sort an array from smallest number to largest
 
-function leastToGreatest(arr) {
+function leastToGreatest(arr1) {
+  return arr1.sort(function(a,b){
+    return a - b
+  })
+}
 
-    // your code here
-
-    
-  }
-  
-  console.log(leastToGreatest([1, 3, 5, 2, 90, 20])); // [1, 2, 3, 5, 20, 90]
-  
+console.log(leastToGreatest([1, 3, 5, 2, 90, 20])); // [1, 2, 3, 5, 20, 90]
