@@ -48,7 +48,6 @@ const voteCount = voters.reduce(function(final,voters){
 console.log(voteCount)
 
 
-
 const didntVoteCount = voters.reduce(function(final, voters){
     if(!voters.voted){ // <--- the "!"  means the take the vote = false or to return the number of people who did not vote.
         final++
@@ -57,3 +56,29 @@ const didntVoteCount = voters.reduce(function(final, voters){
 },0)
 
 console.log(didntVoteCount)
+
+
+
+
+// 4 - return an object that has a count of both who voted and who didnt
+
+
+const voterObj = voters.reduce(function(final, voter){
+    if(voter.voted){
+        final.didVote++
+    }else{
+        final.didntVote++
+    }
+    return final
+
+},{didVote: 0, didntVote: 0})
+
+console.log(voterObj)
+
+
+
+
+
+
+
+
