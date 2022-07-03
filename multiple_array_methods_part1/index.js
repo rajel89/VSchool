@@ -27,21 +27,21 @@ var peopleArray = [
     lastName: "Smith",
     age: 29,
   },
-  // {
-  //   firstName: "Kyle",
-  //   lastName: "Mooney",
-  //   age: 27,
-  // },
-  // {
-  //   firstName: "Pasha",
-  //   lastName: "Datsyuk",
-  //   age: 13,
-  // },
-  // {
-  //   firstName: "Lev",
-  //   lastName: "Tolstoy",
-  //   age: 82,
-  // },
+  {
+    firstName: "Kyle",
+    lastName: "Mooney",
+    age: 27,
+  },
+  {
+    firstName: "Pasha",
+    lastName: "Datsyuk",
+    age: 13,
+  },
+  {
+    firstName: "Lev",
+    lastName: "Tolstoy",
+    age: 82,
+  },
 ];
 
 const overEighteen = peopleArray
