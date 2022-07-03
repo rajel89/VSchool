@@ -49,6 +49,7 @@ const overEighteen = peopleArray
 
   .sort(function (a, b) {
     return a.lastName === b.lastName ? 0 : a.lastName < b.lastName ? -1 : 1;
-  });
-
+  })
+  
+  .map(tag => console.log("<li> " + tag.firstName + " " + tag.lastName + " is " + tag.age + " </li>"));
 console.log(overEighteen);
