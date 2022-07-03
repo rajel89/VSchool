@@ -12,3 +12,20 @@ function total(arr) {
 }
 
 console.log(total([1, 2, 3])); // 6
+
+//2) Turn an array of numbers into a long string of all those numbers.
+console.log("2) Turn an array of numbers into a long string of all those numbers.")
+
+function stringConcat(arr2) {
+    // your code here
+    // const stringConcat = arr2.reduce((a,b) => a + b, '');
+    // return stringConcat
+    
+    return arr2.reduce(function(final, num2){
+    
+        return  final +""+ num2;
+    })
+
+}
+ 
+ console.log(stringConcat([1,2,3])); // "123"
