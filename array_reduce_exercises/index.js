@@ -62,14 +62,16 @@ var voters = [
 console.log(totalVotes(voters)); // 7
 
 //4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once
-console.log("4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once")
+console.log(
+  "4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once"
+);
 
 function shoppingSpree(arr4) {
   // your code here
-    const totalPrice = wishlist.map(prices => Number(prices.price))
-    .reduce((sumOfPrices, pricing) => sumOfPrices + pricing)
-    return totalPrice
-
+  const totalPrice = wishlist
+    .map((prices) => Number(prices.price))
+    .reduce((sumOfPrices, pricing) => sumOfPrices + pricing);
+  return totalPrice;
 }
 
 var wishlist = [
@@ -81,3 +83,19 @@ var wishlist = [
 ];
 
 console.log(shoppingSpree(wishlist)); // 227005
+
+//5) Given an array of arrays, flatten them into a single array
+console.log("5) Given an array of arrays, flatten them into a single array");
+
+function flatten(arr5) {
+  // your code here
+
+  return flatten = arr5.reduce(function (final, arrList) {
+    final.push(arrList + arrays.length);
+    return final;
+  });
+}
+
+var arrays = [["1", "2", "3"], [true], [4, 5, 6]];
+
+console.log(flatten(arrays)); // ["1", "2", "3", true, 4, 5, 6];
