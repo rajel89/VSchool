@@ -45,6 +45,7 @@ const voteCount = voters.reduce(function (final, voters) {
 
 console.log(voteCount);
 
+
 const didntVoteCount = voters.reduce(function (final, voters) {
   if (!voters.voted) {
     // <--- the "!"  means the take the vote = false or to return the number of people who did not vote.
