@@ -75,7 +75,7 @@ var users = [
   
 
 
-// 6. Using the pets array, how would you write a for loop that would console.log all the pets in reverse order?
+// 6. Using the petsArr, how would you write a for loop that would console.log all the pets in reverse order?
 
 var petsArr = ["cat", "dog", "bird", "snake", "rabbit"];
 
