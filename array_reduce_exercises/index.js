@@ -66,7 +66,7 @@ console.log(
   "4) Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once"
 );
 
-function shoppingSpree(arr4) {
+function shoppingSpree() {
   // your code here
   const totalPrice = wishlist
     .map((prices) => Number(prices.price))
@@ -91,11 +91,84 @@ function flatten(arr5) {
   // your code here
 
   return flatten = arr5.reduce(function (final, arrList) {
-    final.push(arrList + arrays.length);
+    final.push(arrList+arrays.length);
     return final;
   });
 }
 
-var arrays = [["1", "2", "3"], [true], [4, 5, 6]];
+var arrays = [["1", "2", "3"], [true], [4, 5,6]];
 
 console.log(flatten(arrays)); // ["1", "2", "3", true, 4, 5, 6];
+
+
+//6) Given an array of potential voters, return an object representing the results of the vote
+//<-----------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx----------->
+
+//Include how many of the potential voters were in the ages 18-25, how many from 26-35, how many 
+//from 36-55, and how many of each of those age ranges actually voted. The resulting object 
+//containing this data should have 6 properties. See the example output at the bottom.
+
+console.log("6) Given an array of potential voters, return an object representing the results of the vote")
+
+var votersObj = [
+    {name:'Bob' , age: 30, voted: true},
+    {name:'Jake' , age: 32, voted: true},
+    {name:'Kate' , age: 25, voted: false},
+    {name:'Sam' , age: 20, voted: false},
+    {name:'Phil' , age: 21, voted: true},
+    {name:'Ed' , age:55, voted:true},
+    {name:'Tami' , age: 54, voted:true},
+    {name: 'Mary', age: 31, voted: false},
+    {name: 'Becky', age: 43, voted: false},
+    {name: 'Joey', age: 41, voted: true},
+    {name: 'Jeff', age: 30, voted: true},
+    {name: 'Zack', age: 19, voted: false}
+];
+
+function voterResults(arrOfPeople) {
+   // your code here
+   return voterResults = arrOfPeople.reduce(function(final, listOfVoters){
+    if (final.age >= 18 && listOfVoters.age <= 25 && listOfVoters.voted){
+        final.numYoungVotes++;
+    }
+    if(listOfVoters.age >= 18 && listOfVoters.age <= 25){
+        final.numYoungPeople++;
+    }
+    if(listOfVoters.age >= 26 && listOfVoters.age <= 35 && listOfVoters.voted){
+        final.numMidsPeople++;
+    }
+    if(listOfVoters.age >= 26 && listOfVoters.age <= 35){
+        final.numMidVotesPeople++;   
+    }
+    if(listOfVoters.age >=36 && listOfVoters.age <= 55 && listOfVoters.voted){
+        final.numOldVotesPeople++;
+    }
+    if(listOfVoters.age >= 36 && listOfVoters.age <= 55){
+        final.numOldVotesPeople++;
+    }
+    return {...final};
+   },{
+    numYoungVotes: 0,
+    numYoungPeople: 0,
+    numMidVotesPeople: 0,
+    numMidsPeople: 0,
+    numOldVotesPeople: 0,
+    numOldsPeople: 0
+   });
+   return voterResults
+};
+
+
+
+console.log(voterResults(votersObj)); 
+
+// Returned value shown below:
+/*
+{ numYoungVotes: 1,
+  numYoungPeople: 4,
+  numMidVotesPeople: 3,
+  numMidsPeople: 4,
+  numOldVotesPeople: 3,
+  numOldsPeople: 4
+}
+*/
