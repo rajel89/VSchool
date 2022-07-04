@@ -52,4 +52,4 @@ const overEighteen = peopleArray
   })
   
   .map(tag => console.log("<li> " + tag.firstName + " " + tag.lastName + " is " + tag.age + " </li>"));
-console.log(overEighteen);
+// console.log(overEighteen);
