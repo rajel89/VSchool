@@ -27,3 +27,6 @@ stopBtn.addEventListener('click', function(){
 
     clearInterval(intervalId)           //<--- clearInterval is used together with setInterval
 })
+
+
+
