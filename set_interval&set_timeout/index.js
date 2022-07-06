@@ -17,11 +17,13 @@ startBtn.addEventListener("click", function(){
 })
 
 stopBtn.addEventListener('click', function(){
-    // intervalId = setTimeout(incrementTimer,100)
-    intervalId = setInterval(incrementTimer, 100)
+    // intervalId = setTimeout(incrementTimer,100)  //<--- setTimeout is used together with the clearTimeout
+    intervalId = setInterval(incrementTimer, 100)   //<--- setInterval is used together with clearInterval
 
 })
 
 stopBtn.addEventListener('click', function(){
-    clearTimeout(intervalId)
+    // clearTimeout(intervalId)          //<----- clearTimeout is used together with setTimeout
+
+    clearInterval(intervalId)           //<--- clearInterval is used together with setInterval
 })
