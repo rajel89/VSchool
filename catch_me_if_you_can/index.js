@@ -4,16 +4,36 @@
 
 //1a) Write a function that returns the sum of two numbers. Throw an error if either argument is not of the data type "number".
 
-let total = sum(4, 4);
 
-function sum (x ,y){
+function isNumber(num){
     //check data type first and throw error
-   
-    return x + y;
-
+ if(typeof num === 'number'){
+    return num - num === 0;
+ }
+   return false;
 }
 
-console.log(total)
+function sum (x ,y){
+    if (!isNumber(x) || !isNumber(y)){
+        throw new Error('error, input is not a number');
+    }
+    return x + y;
+}
+
+try {
+    let total = sum(4, 4);
+    console.log(total);
+}
+catch (err){
+    console.log(err.message);
+}
+try {
+    let toal = sum('4', 4);
+    console.log(total);
+}
+catch(err){
+    console.log(err.message);
+}
 
 
 
@@ -31,8 +51,8 @@ console.log(total)
 
 
 
-var user = {username: "sam", password: "123abc"};
-function login(username, password){
+// var user = {username: "sam", password: "123abc"};
+// function login(username, password){
     
 
 // }
