@@ -20,15 +20,19 @@ function sum (x ,y){
     return x + y;
 }
 
+//1b) Call the sum function inside a try block using "1" and "2" as arguments. 
+//Use console.log within a catch block to inform the user of the error.
+
+
 try {
-    let total = sum(4, 4);
+    let total = sum(4,8); // <---- enter number value here
     console.log(total);
 }
 catch (err){
     console.log(err.message);
 }
 try {
-    let toal = sum('4', 4);
+    let total = sum('4', 4);
     console.log(total);
 }
 catch(err){
@@ -37,17 +41,12 @@ catch(err){
 
 
 
-//1b) Call the sum function inside a try block using "1" and "2" as arguments. 
-//Use console.log within a catch block to inform the user of the error.
-
-
-
-
-
-
 
 //2a) Given a user object, write a function called login that takes a username and password as parameters. 
 //Throw an error if either of them don't match. Otherwise, log to the console a message saying "login successful!"
+
+
+
 
 
 
