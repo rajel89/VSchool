@@ -1,0 +1,15 @@
+function sum(num1, num2){   
+    return num1 + num2
+
+}
+
+// will have to values called ""expected", "actual"
+const actual = sum(10,10)
+const expected = 20
+
+if (actual !== expected){
+    throw new Error (`TEST FAILED: Expected ${expected}, but received ${actual}.`)
+}else{
+    console.log(`TEST PASSED: ${expected} === ${actual}`)
+}
+
