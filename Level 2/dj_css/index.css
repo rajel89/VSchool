@@ -67,6 +67,9 @@ h1{
     border: 1px solid black;
    
   }
+  #box5:hover{
+    text-align: center;
+  }
 
   #box6 {
     width: 200px;
