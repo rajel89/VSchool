@@ -18,11 +18,16 @@ button.addEventListener('click', function(){
 // }
 
 function collectAnimals(...animals) {  
-    return animals
+    // return animals;
+    console.log(animals); //<<< to console log the array of animals, use console.log instead of return.
 }
 
 
 collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
+
+
+
+
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
 //-------------------------------------------------------------------------------------------
@@ -41,6 +46,7 @@ function parseSentence({location, duration}){
     return `We're going to have a good time in ${location} for ${duration}`
   }
 
+  console.log(parseSentence(vacation))
 
 // console.log(parseSentence(vacation)) // this line will break stuff unless you fix the parameter
 
@@ -78,3 +84,8 @@ function greet(name, greeting = "hello"){
 console.log(greet('Emily', 'Wazzzup'))
 
 
+
+
+
+
+  
