@@ -1,0 +1,159 @@
+{
+    "menu": [
+        {
+            "Appetizers": [
+                {
+                    "Chips and Salsa": [
+                        "Queso",
+                        "Salsa"
+                    ]
+                },
+                {
+                    "Wings": [
+                        "Boneless buffalo",
+                        "Honey BBQ"
+                    ]
+                }
+            ]
+        },
+        {
+            "Cold sandwiches": [
+                {
+                    "Cranberry-Walnut Chicken Salad Sandwiches": [
+                        {
+                            "ingredients": [
+                                "mayonnaise",
+                                "Dijon mustard",
+                                "Dried cranberries",
+                                "chopped walnuts",
+                                "lettuce"
+                            ]
+                        },
+                        {
+                            "Discription": "I made these simple yet special cranberry walnut chicken salad sandwiches for a birthday party. Tangy cranberries and crunchy celery pep up the chicken"
+                        }
+                    ]
+                },
+                {
+                    "Cobb Salad Sub": [
+                        {
+                            "ingredients": [
+                                "unsliced Italian bread",
+                                "balsamic vinaigrette or dressing",
+                                "fresh baby spinach",
+                                "hard-boiled large eggs, finely chopped",
+                                "bacon strips, cooked and crumbled",
+                                "crumbled Gorgonzola cheese",
+                                "cherry tomatoes, chopped"
+                            ]
+                        },
+                        {
+                            "Discription": "When we need a quick meal to share, we turn Cobb salad into a sandwich masterpiece. Sometimes I substitute tortillas for the bread and make wraps instead."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Hot sandwiches": [
+                {
+                    "Mojito Pulled Pork": [
+                        {
+                            "ingredients": [
+                                "boneless pork shoulder roast",
+                                "chopped green chiles",
+                                "organge juice",
+                                "lime juice",
+                                "BBQ sauce and pickle chips"
+                            ]
+                        },
+                        {
+                            "Discription": "This fork-tender pulled pork tastes fabulous on a bun, in a wrap or tortilla. My kids like to eat it spooned over rice in its citrus-flavored juices."
+                        }
+                    ]
+                },
+                {
+                    "Philly Cheese Sandwiches": [
+                        {
+                            "ingredients": [
+                                "boneless beef chuck roast",
+                                "worcestershire sauce",
+                                "dried oregano",
+                                "American cheese or pepper jack cheese"
+                            ]
+                        },
+                        {
+                            "Discription": "I'm a big fan of cheesesteaks, and in this throw-together recipe my slow cooker does all the work. It's a win-win."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Desserts": [
+                {
+                    "Oreo Cheesecake Bars": [
+                        {
+                            "ingredients": [
+                                "chocolate chip cookie dough",
+                                "Oreo cookies",
+                                "warm caramel"
+                            ]
+                        },
+                        {
+                            "Discription": "Top with a single layer of Oreos it's a dessert perfect to satisfy the sweettooth served with a warm caramel"
+                        }
+                    ]
+                },
+                {
+                    "Samoa Dessert Lasagna": [
+                        {
+                            "ingredients": [
+                                "crushed Nilla wafer",
+                                "toasted shredded coconut",
+                                "melted chocolate and caramel"
+                            ]
+                        },
+                        {
+                            "Discription": "Don't wait for Girl Scout cookie season to have your favorite cookie. This Samoa dessert lasagna recreates the cookie in four perfect layers. "
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Drinks": [
+                {
+                    "Negroni": [
+                        {
+                            "ingredients": [
+                                "Gin",
+                                "Campari",
+                                "Sweet Vermouth",
+                                "Orange peel"
+                            ]
+                        },
+                        {
+                            "Discription": "he Negroni’s bitter intensity and easy equal-parts formula have helped make it a favorite among home and professional bartenders alike."
+                        }
+                    ]
+                },
+                {
+                    "Daiquiri": [
+                        {
+                            "ingredients": [
+                                "Light rum",
+                                "freshly squeezed lime juice",
+                                "Demerara sugar syrup",
+                                "Garnish lime twist"
+                            ]
+                        },
+                        {
+                            "Discription": "The blender has certainly put its stamp on the Daiquiri, but this profoundly simple drink is at its best when it stays clear of a steel blade. Simply shake up rum, simple syrup and a blast of fresh lime juice, and you have the most perfect of citrusy cocktails."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
