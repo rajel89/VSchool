@@ -21,3 +21,4 @@ function showData(arr) {
     document.body.appendChild(h1);
   }
 }
+
