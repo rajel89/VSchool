@@ -55,9 +55,9 @@ async function getData() {
 
   const lukeResponse = await fetch("https://swapi.dev/api/people/1");
   const lukeData = await lukeResponse.json();
-  console.log(lukeData.homworld); // Logs "https://swapi.dev/api/planet/1"
+  console.log(lukeData.homeworld); // Logs "https://swapi.dev/api/planet/1"
 
-  const planetResponse = await fetch(lukeData.homworld);
+  const planetResponse = await fetch(lukeData.homeworld);
   const planetData = await planetResponse.json();
   console.log(planetData.name); // Logs "Tatooine"!
 
@@ -74,5 +74,4 @@ async function getData() {
 // got returned from that function .So eventually we'll need to use a .then()
 
 getData().then((lukeData) => console.log(lukeData));
-
 
