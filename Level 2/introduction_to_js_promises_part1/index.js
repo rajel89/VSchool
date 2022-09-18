@@ -41,13 +41,13 @@ console.log("Outside the setTimeout");
 
 //Example 3 (using a promise)
 
-fetch("http://some.url")
-  .then((response) => response.json())
-  .then((response) => {
-    console.log(response.data); // Runs SECOND
-  });
+// fetch("http://some.url")
+//   .then((response) => response.json())
+//   .then((response) => {
+//     console.log(response.data); // Runs SECOND
+//   });
 
-console.log("Outside the fetch's GET request"); // Runs FIRST
+// console.log("Outside the fetch's GET request"); // Runs FIRST
 
 
 
@@ -125,18 +125,21 @@ getData("https://swapi.dev/api/people/1/", function(lukeData){
 //Or here's an even more contrived example that may drive the point home:
 
 
-fetch("https://some.url")
-.then(function(resFromUrl){
-    console.log("First. then block")
-    return "Hi there!" //Return an abritraty string fro demosntration purposes
-})
-.then(function(valueFrom1stThenBlock){
-    console.log(valueFrom1stThenBlock) //Logs "Hi there!"
-    return "Goodbye."
-})
-.then(function(valueFrom2ndThenBlock){
-    console.log(valueFrom2ndThenBlock) //Logs "Goodbye."
-})
+// fetch("https://some.url")
+// .then(function(resFromUrl){
+//     console.log("First. then block")
+//     return "Hi there!" //Return an abritraty string fro demosntration purposes
+// })
+// .then(function(valueFrom1stThenBlock){
+//     console.log(valueFrom1stThenBlock) //Logs "Hi there!"
+//     return "Goodbye."
+// })
+// .then(function(valueFrom2ndThenBlock){
+//     console.log(valueFrom2ndThenBlock) //Logs "Goodbye."
+// })
+
+
+
 
 
 
