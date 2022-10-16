@@ -39,6 +39,15 @@ axiosGet.addEventListener("submit", function (event) {
     .catch((error) => console.log(error));
 });
 
+
+
+
+
+
+
+
+
+
 //DELETE FUNCTION
 
 const axiosDelete = document.axiosdelete;
@@ -74,8 +83,8 @@ axiosPut.addEventListener("submit", function(event){
     }
 
     axios.put("https://api.vschool.io/rajel/todo/" + axiosPutItem._id, axiosPutItem)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error));
+    .then((response) => console.log(response.data))
+    .catch((error) => console.log(error));
 
 
 })
