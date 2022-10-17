@@ -19,13 +19,13 @@ function listData(data){
     for (let i = 0; i < data.length; i++){
         const h1 = document.createElement('h1')
         h1.textContent = data[i].title
-        document.getElementById('todo-list').appendChild(h1)
+        document.getElementById('todo-items').appendChild(h1)
     }
 }
 
 
 function clearList(){
-    const el = document.getElementById('todo-list')
+    const el = document.getElementById('todo-items')
     while(el.firstChild){
         el.removeChild(el.firstChild)
     }

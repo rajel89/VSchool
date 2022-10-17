@@ -5,25 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Level 2 Capstone Axios Todo Project</title>
 </head>
 <!-- <h1>Level 2 Capstone Axios Todo Project</h1> -->
 
 <body>
 
-    <form name = "todo-form">
-        <input name ="title" placeholder="Title"/>
-        <input type="number" name="price" placeholder="$0.00"/>
-        <input name ="description" placeholder="Description"/>
-        <input name="imgUrl" placeholder="Image Url"/>
-        <button>Submit</button>
 
-    </form>
+    <div class="container">
+        <h1>Todo List</h1>
 
-    <div id ="todo-list">
+        <!--Todo List Form-->
+
+        <form action="" class="todo-form">
+            <input name="title" class="todo-input" placeholder="Item..." />
+            <input type="number" class="item-price" name="price" placeholder="$0.00" />
+            <input name="description" class="item-description" placeholder="Description" />
+            <input name="imgUrl" class="imgUrl" placeholder="Image Url" />
+
+            <!--Add button-->
+            <button type="submit" class="add-button">submit</button>
+
+        </form>
+        <div class="file-list">
+
+            <ul class="todo-items"></ul>
+
+        </div>
+
 
     </div>
+
+    <!--Todo List Items-->
+
+
+
+
+
 
 
 
