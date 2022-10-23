@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Level 2 Capstone Axios Todo Project</title>
 </head>
 <!-- <h1>Level 2 Capstone Axios Todo Project</h1> -->
@@ -18,26 +19,32 @@
 
         <!--Todo List Form-->
 
-        <form action="" class="todo-form">
+        <form action="" class="todo-form" name="todo-form">
             <input name="title" class="todo-input" placeholder="Item..." />
             <input type="number" class="item-price" name="price" placeholder="$0.00" />
             <input name="description" class="item-description" placeholder="Description" />
             <input name="imgUrl" class="imgUrl" placeholder="Image Url" />
 
             <!--Add button-->
-            <button type="submit" class="add-button">submit</button>
+            <button class="add-button" id="submit-button">submit</button>
 
         </form>
-        <div class="file-list">
+        <div class="todo-list" id="todo-list">
 
-            <ul class="todo-items"></ul>
+            <h2 class="todo-items"></h2>
+            
+
+            <!--Delete Button-->
 
         </div>
 
+        
 
     </div>
 
     <!--Todo List Items-->
+
+
 
 
 
