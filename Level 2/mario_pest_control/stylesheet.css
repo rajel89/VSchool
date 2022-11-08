@@ -1,0 +1,63 @@
+.b-image{
+    background-image: url("wp2337041.jpg");
+    background-color: #cccccc;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.contactinfo-text {
+    text-align: left;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50 %);
+    color: white;
+  }
+
+
+  .pest-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    grid-template-columns: auto auto auto;
+    background-color:"";
+    padding: 300px;
+    color: white;
+  }
+
+.itemimagesize {
+    width: 30%;
+    border-radius: 50%;
+  }
+
+
+
+  .header-logo{
+    height:125px;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+
+
+  }
+
+  .pest-control{
+    display: inline-block;
+    color:white;
+    font-size: 80px;
+  }
+  
+  .numberinput{
+    height: 50px;
+    margin-top: 150px;
+  }
+
+  .numbercount{
+    height: 50px;
+    margin-top: 150px;
+  }
