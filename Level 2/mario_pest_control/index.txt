@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="b-image">
+
+        <div class="header-logo">
+            <image class="itemimagesize" src="Super_Mario_Logo.png" alt="logo"></image>
+            <a class="pest-control">Pest Control</a>
+        </div>
+
+
+        <div class="pest-container">
+
+            <div class="goomba">
+                <div>
+                    <h1>Goomba</h1>
+                    <image class="itemimagesize" src="goomba.png" alt="goomba pest"></image>
+                    <h1>5 Coins</h1>
+                </div>
+
+                <input class="numbercount" type="number" id="goombas" placeholder="count">
+                <input class="numbercost" id="totalGoombas" placeholder="Total Cost">
+                <input class="function" type="button" onclick="multiplyGoombasBy()" value="multiply" />
+
+            </div>
+
+
+            <div class="bob-omb">
+                <div>
+                    <h1>Bob-ombs</h1>
+                    <image class="itemimagesize" src="bob-omb.png" alt="goomba pest"></image>
+                    <h1>7 Coins</h1>
+                </div>
+                <input class="numbercount" type="number" id="bobombs" placeholder="count">
+
+                <input class="numbercost" id="totalBobombs" placeholder="Total Cost">
+                <input class="function" type="button" onclick="mutiplyBobombsBy()" value="multiply" />
+
+            </div>
+
+
+            <div class="cheep-cheep">
+                <div>
+                    <h1>Cheep-Cheep</h1>
+                    <image class="itemimagesize" src="cheep-cheep.png" alt="goomba pest"></image>
+                    <h1>11 Coins</h1>
+                </div>
+                <input class="numbercount" type="number" id="cheep-cheeps" placeholder="count">
+                
+                <input class="function" type="button" onclick="multiplyCheepsBy()" value="multiply" />
+
+
+            </div>
+            <!-- Total Ammount -->
+
+
+            <!-- <div class="TotalAmmount">
+
+                Total Ammount Due: <input id="ammountDue" value="Due Ammount">
+                <input type="button" onclick="totalBaddies()" value="Total">
+
+
+            </div> -->
+
+        </div>
+
+
+
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
