@@ -23,12 +23,15 @@
     display: grid;
     grid-column-gap: 50px;
     grid-row-gap: 100px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     background-color:"";
     padding: 300px;
     color: white;
   }
 
+ 
+
+  
 .itemimagesize {
     width: 30%;
     border-radius: 50%;
@@ -52,7 +55,7 @@
     font-size: 80px;
   }
   
-  .numberinput{
+  .numbercost{
     height: 50px;
     margin-top: 150px;
   }
@@ -60,4 +63,31 @@
   .numbercount{
     height: 50px;
     margin-top: 150px;
+  }
+
+  .function{
+    height: 50px;
+    margin-top: 150px;
+    
+  }
+
+
+
+  .totalCost{
+    height: 50px;
+  
+  }
+
+
+
+
+
+  .baddiesCalculator-text {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    grid-template-columns: auto auto auto auto;
+    background-color:"";
+    padding: 300px;
+    color: white;
   }
