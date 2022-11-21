@@ -8,12 +8,16 @@ function isNumber(num) {
   return false;
 }
 
+
 function sum(x, y) {
   if (!isNumber(x) || !isNumber(y)) {
     throw new Error("error, input is not a number");
   }
   return x + y;
 }
+
+
+
 
 //1b) Call the sum function inside a try block using "1" and "2" as arguments.
 //Use console.log within a catch block to inform the user of the error.
@@ -37,9 +41,12 @@ try {
 var user = { userName: "sam", passWord: "123abc" };
 function login(userName, passWord) {
     if(!userName === "" || passWord === "user")
+    throw new Error("Wrong user name and password")
 
 }
-console.log(login);
+
+
 
 //2b) Call the login function within a try block. In one instance use the correct credentials, and in another use incorrect ones.
 //Make sure you see the appropriate message!
+
