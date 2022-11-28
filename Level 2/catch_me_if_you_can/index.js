@@ -41,10 +41,12 @@ try {
 var user = { userName: "sam", passWord: "123abc" };
 function login(userName, passWord) {
     if(!userName === "" || passWord === "user")
+  
     throw new Error("Wrong user name and password")
 
-}
+    
 
+}
 
 
 //2b) Call the login function within a try block. In one instance use the correct credentials, and in another use incorrect ones.
