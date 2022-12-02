@@ -5,57 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Level 2 Capstone Axios Todo Project</title>
 </head>
-<!-- <h1>Level 2 Capstone Axios Todo Project</h1> -->
 
 <body>
-
-
     <div class="container">
-        <h1>Todo List</h1>
+        <h1>TO DO LIST</h1>
+        <form class="todo-form" name="todoform">
 
-        <!--Todo List Form-->
-
-        <form action="" class="todo-form" name="todo-form">
-            <input name="title" class="todo-input" placeholder="Item..." />
-            <input type="number" class="item-price" name="price" placeholder="$0.00" />
-            <input name="description" class="item-description" placeholder="Description" />
-            <input name="imgUrl" class="imgUrl" placeholder="Image Url" />
-
-            <!--Add button-->
-            <button class="add-button" id="submit-button">submit</button>
-
+            <input name="title" class="todo-input" type="text" placeholder="item..." required />
+            <input name="price" class="item-price" type="number" placeholder="$0.00" required />
+            <input name="description" class="item-description" type="text" placeholder="Description..." required />
+            <input name="imgUrl" class="imgUrl" id="image_input" type="url" placeholder="Image Url" />
+            <button type="submit">Submit</button>
         </form>
-        <div class="todo-list" id="todo-list">
-
-            <h2 class="todo-items"></h2>
-            
-
-            <!--Delete Button-->
-
-        </div>
-
-        
+        <ul name="list" class="todo-list" id="list"></ul>
 
     </div>
-
-    <!--Todo List Items-->
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
-    <script src="index.js"></script>
-
+    <script src="app.js"></script>
 </body>
 
 </html>

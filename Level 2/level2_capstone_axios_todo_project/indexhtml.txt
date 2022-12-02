@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Level 2 Capstone Axios Todo Project</title>
+</head>
+<!-- <h1>Level 2 Capstone Axios Todo Project</h1> -->
+
+<body>
+
+
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <!--Todo List Form-->
+
+        <form action="" class="todo-form" name="todo-form">
+            
+            <input name="title" class="todo-input" placeholder="Item..." required />
+            <input type="number" class="item-price" name="price" placeholder="$0.00" required/>
+            <input name="description" class="item-description" placeholder="Description" required/>
+            <input name="imgUrl" class="imgUrl" placeholder="Image Url" />
+
+            <!--Add button-->
+            <button class="add-button" id="submit-button">submit</button>
+
+        </form>
+        
+        <div class="todo-list" id="todo-list">
+
+
+            <h2 class="todo-items" id="item-name"></h2>
+            <h2 class="todo-items" id="item-price"></h2>
+            
+
+            <!--Delete Button-->
+
+        </div>
+
+        
+
+    </div>
+
+    <!--Todo List Items-->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
