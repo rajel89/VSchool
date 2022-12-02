@@ -7,6 +7,7 @@ todoForm.addEventListener("submit", function (e) {
     price: todoForm.price.value,
     description: todoForm.description.value,
     imgUrl: todoForm.imgUrl.value,
+    edit: false,
     completed: false,
   };
 
@@ -62,14 +63,23 @@ const getAll = () => {
 
 
         const updateForm = document.createElement("input");
-        updateForm.placeholder = "Change Info Here";
+        updateForm.placeholder = "Update Item...";
 
         // const updateButton = document.createElement('button')
 
-        
-        const updateButton = document.createElement("button");
-        
 
+        const updateButton = document.createElement("button");
+        const editButton = response.data[i].edit;
+        if(editButton === false){
+          toDoItem.appendChild(h2);
+          updateButton.textContent = "Edit";
+        }
+        else if (editButton === true){
+          toDoItem.appendChild(s);
+          updateButton.textContent ="Save"
+        }
+
+       
 
 
         const completeButton = document.createElement("button");
@@ -77,11 +87,11 @@ const getAll = () => {
         if (boxCheck === false) {
           toDoItem.appendChild(h2);
           completeButton.textContent = "Complete";
-        
+
         } else if (boxCheck === true) {
           toDoItem.appendChild(s);
           completeButton.textContent = "Incomplete";
-       
+
         }
 
         const deleteButton = document.createElement("button");
@@ -91,16 +101,17 @@ const getAll = () => {
         toDoItem.appendChild(price);
         toDoItem.appendChild(p);
         toDoItem.appendChild(updateForm);
+        toDoItem.appendChild(updateButton);
         toDoItem.appendChild(completeButton);
-        
+
 
         toDoItem.appendChild(deleteButton);
         completeButton.addEventListener("click", (e) => {
           completeToDo(e, boxCheck);
         });
 
-        updateForm.addEventListener("click", (e) => {
-            updateToDo(e);
+        updateButton.addEventListener("click", (e) => {
+            updateToDo(e, editButton);
           });
 
 
@@ -118,7 +129,8 @@ const completeToDo = (e, updateTodo) => {
   console.log(updateTodo);
   updateTodo = !updateTodo;
   const updatedToDo = {
-    completed: itemEditEl,
+    completed: updateTodo,
+  
   };
   const { id } = e.target.parentElement;
   axios

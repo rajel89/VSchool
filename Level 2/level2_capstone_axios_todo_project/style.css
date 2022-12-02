@@ -82,17 +82,6 @@ h1{
 
 }
 
-.add-button{
-
-    background: #1053ba;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 3px;
-    padding: 5px 20px;
-    font-size: 1.2rem;
-
-}
 
 
 .todo-list{
@@ -106,11 +95,4 @@ h1{
     padding: 25px 30px;
     border-radius: 2p;
 
-}
-
-.todo-items{
-
-    min-width: 350px;
-    
-    
 }
