@@ -1,8 +1,6 @@
-h1 {
-  font: normal 1.4em georgia, sans-serif;
-  letter-spacing: 1px;
-  color: black;
-}
+
+
+
 
 body {
   background-image: url("background.jpg");
@@ -26,17 +24,84 @@ body {
     
 }
 
-.intro {
-  text-align: center;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
+
+.intro { 
+  
+  border: solid red;
+	/* min-width: 470px;
+	width: 100%; */
+
+	}
+
+/* header formatting */
+header h1 {
+  
+  margin-top: 10px;
+  display: flex;
+  font: normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+
 }
 
-.first-box {
-  text-align: center;
-  position: absolute;
-  color: black;
+header h2{
+  margin-top: 10px;
+  display: flex;
+  font: normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.summary{
+  border: solid red;
+}
+
+
+.road-to-enlightenment{
+  border: none;
+}
+
+
+
+.so-what-is-this-about{
+  border: none;
+}
+
+
+.participation{
+  border: solid red;
+}
+
+
+.benefits{
+  border: none;
+}
+
+.requirements{
+  border: solid red;
+}
+
+.side-bar{
+
+}
+
+
+.contact-info{
+  border: solid red;
+}
+
+
+.footer{
+ border: solid red;
 }

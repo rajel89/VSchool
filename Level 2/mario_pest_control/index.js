@@ -45,8 +45,11 @@
 //     document.getElementById("totalCheeps").value = (numCheeps * 11);
 // }
 
+
+const numGoombas = document.getElementById("goombas").value;
+
 function multiplyGoombasBy (){
-    numGoombas = document.getElementById("goombas").value;
+    
     document.getElementById("totalGoombas").value = (numGoombas * 5);
 }
 
@@ -54,21 +57,27 @@ console.log(multiplyGoombasBy)
 
 
 
+const numBobombs = document.getElementById("bobombs").value;
+
 function mutiplyBobombsBy (){
-    numBobombs = document.getElementById("bobombs").value;
+    
     document.getElementById("totalBobombs").value = (numBobombs * 7);
 }
 
 console.log(mutiplyBobombsBy)
 
 
+const  numCheeps = document.getElementById("cheep-cheeps").value;
 
 function multiplyCheepsBy(){
-    numCheeps = document.getElementById("cheep-cheeps").value;
+   
     document.getElementById("totalCheeps").value = (numCheeps * 11);
 }
 
 
+const totalvalue = document.getElementById("total-value")
+
+totalvalue.textContent = (+numGoombas + +numBobombs + +numCheeps)
 
 
 

@@ -35,7 +35,16 @@ h1{
     border-radius: 2px
 }
 
+.submit{ 
+    width: 100px;
+    outline: none;
+    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid rgb(101, 98,98);
+    margin-right: 10px;
+    font-size: 1rem;
 
+}
 
 .todo-input{
     width: 250px;
