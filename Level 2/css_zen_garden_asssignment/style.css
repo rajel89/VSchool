@@ -34,7 +34,7 @@ body {
 } */
 
 .css-zen-garden-header {
-  border: solid red;
+  /* border: solid red; */
   padding-left: 300px;
   background-color: rgba(58, 133, 116, 0.822);
   font-style: italic;
@@ -45,7 +45,7 @@ body {
 }
 
 .view-all-designs {
-  border: solid red;
+  /* border: solid red; */
   padding-top: 30px;
   text-align: center;
   background-color: rgba(58, 133, 116, 0.822);
@@ -87,7 +87,7 @@ header h2 {
 }
 
 .summary {
-  border: solid red;
+  /* border: solid red; */
   padding-top: 50px;
   padding-left: 180px;
   padding-right: 100px;
@@ -126,7 +126,7 @@ header h2 {
 }
 
 .side-bar1 {
-  border: solid red;
+  /* border: solid red; */
   text-align: left;
   padding-top: 50px;
   padding-left: 100px;
@@ -135,25 +135,23 @@ header h2 {
 }
 
 .side-bar2 {
-  border: solid red;
+  /* border: solid red; */
   text-align: left;
-  padding-left: 100px;
-  padding-top: 100px;
-
-  padding-left: 180px;
-  padding-right: 100px;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-bottom: 100px;
   background-color: rgba(178, 212, 191, 0.999);
-  /* font-size: large; */
+  font-size: large;
 }
 
 
 .side-bar3 {
-  border: solid red;
+  /* border: solid red; */
   background-color: rgb(222, 230, 227);
 }
 
 .participation {
-  border: solid red;
+  /* border: solid red; */
   padding-top: 50px;
   padding-left: 180px;
   padding-right: 100px;
@@ -168,7 +166,7 @@ header h2 {
 }
 
 .requirements {
-  border: solid red;
+  /* border: solid red; */
   padding-top: 50px;
   padding-left: 180px;
   padding-right: 100px;
@@ -179,7 +177,7 @@ header h2 {
 }
 
 .contact-info {
-  border: solid red;
+  /* border: solid red; */
   grid-column: 3/1;
   padding-top: 100px;
   padding-left: 180px;
@@ -191,7 +189,7 @@ header h2 {
 }
 
 footer {
-  border: solid red;
+  /* border: solid red; */
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
