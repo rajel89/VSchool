@@ -1,107 +1,203 @@
-
-
-
+.css-zen-garden {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
 body {
   background-image: url("background.jpg");
-  font: 75%;
+
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* font: 75%;
   line-height: 1.88889;
   color: black;
 
   margin: 25px;
-  padding: 0;
+  padding: 0; */
 }
 
-.page {
+/* .page {
   background-image: url("background.jpg");
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    opacity: .2;
-    
+  background-position: center;
+  background-color: #cccccc;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.2;
+} */
+
+.css-zen-garden-header {
+  border: solid red;
+  padding-left: 300px;
+  background-color: rgba(58, 133, 116, 0.822);
+  font-style: italic;
+ 
+
+  /* min-width: 470px;
+	width: 100%; */
 }
 
-
-.intro { 
-  
+.view-all-designs {
   border: solid red;
-	/* min-width: 470px;
-	width: 100%; */
+  padding-top: 30px;
+  text-align: center;
+  background-color: rgba(58, 133, 116, 0.822);
+  font-style: italic;
+  font-size: x-large;
+}
 
-	}
+.view-all-design-box{
+  margin-left: 50px;
+  margin-right: 50px;
+  /* margin-top: px; */
+  background-color: rgba(181, 203, 198, 0.458);
+}
+
 
 /* header formatting */
 header h1 {
+  margin-top: 10px;
+  display: flex;
+  font: normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header h2 {
+  margin-top: 10px;
+  display: flex;
+  font: normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left: 500px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  border: solid red;
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  background-color: rgba(246, 246, 246, 0.886);
+  /* font-size: large; */
+  line-height: 2;
   
-  margin-top: 10px;
-  display: flex;
-  font: normal 1.4em georgia, sans-serif;
-  letter-spacing: 1px;
+}
+
+.title{  
+  font-style: bold;
+  font-size:xx-large
+}
+
+
+
+.road-to-enlightenment {
+  border: none;
+}
+
+.so-what-is-this-about {
+  border: none;
+}
+
+
+
+.topic {
+  font-style: bold;
+  font-size: x-large;
+}
+
+.authorname{
+  font-style: italic ;
+  font
+}
+
+.side-bar1 {
+  border: solid red;
   text-align: left;
-  padding-left: 500px;
-
-  display: flex;
-  flex-direction: column;
-
-
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  background-color: rgb(222, 230, 227);
 }
 
-header h2{
-  margin-top: 10px;
-  display: flex;
-  font: normal 1.4em georgia, sans-serif;
-  letter-spacing: 1px;
+.side-bar2 {
+  border: solid red;
   text-align: left;
-  padding-left: 500px;
+  padding-left: 100px;
+  padding-top: 100px;
 
-  display: flex;
-  flex-direction: column;
-
+  padding-left: 180px;
+  padding-right: 100px;
+  background-color: rgba(178, 212, 191, 0.999);
+  /* font-size: large; */
 }
 
 
-.summary{
+.side-bar3 {
   border: solid red;
+  background-color: rgb(222, 230, 227);
 }
 
+.participation {
+  border: solid red;
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  background-color: rgba(198, 216, 205, 0.999);
+  /* font-size: large; */
+  line-height:2;
+}
 
-.road-to-enlightenment{
+.benefits {
   border: none;
 }
 
-
-
-.so-what-is-this-about{
-  border: none;
-}
-
-
-.participation{
+.requirements {
   border: solid red;
+  padding-top: 50px;
+  padding-left: 180px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  background-color: rgba(246, 246, 246, 0.886);
+  /* font-size: large; */
+  line-height: 2;
 }
 
-
-.benefits{
-  border: none;
-}
-
-.requirements{
+.contact-info {
   border: solid red;
+  grid-column: 3/1;
+  padding-top: 100px;
+  padding-left: 180px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(58, 133, 116, 0.822);
+  font-size: xx-large;
+  
 }
 
-.side-bar{
-
-}
-
-
-.contact-info{
+footer {
   border: solid red;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column: 3/1;
+  background-color: rgb(3, 47, 49);
+  font-size: xx-large ;
+  
 }
 
-
-.footer{
- border: solid red;
-}
