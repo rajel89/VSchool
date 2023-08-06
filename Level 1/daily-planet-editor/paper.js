@@ -11,39 +11,39 @@ just fix the existing ones.
 
 var Enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
 
-function Who_Wins(is_there_kryptonite,enemy_name)
+function Who_Wins(is_there_kryptonite,enemy_name) //<< funtion Who_Wins(is-there-kryptonite,enemy_name)
 {
-if (!is_there_kryptonite)
+if (!is_there_kryptonite) // << if (!is-there-kryptonite)
 {
-    return "Superman beats " +enemy_name+ ", of course";
+    return "Superman beats " +enemy_name+ ", of course"; // << return "Superman beats " +enemyName+ ", of course";
 }
 
 else{
-    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemy_name +" could possibly win this one.";
+    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemy_name +" could possibly win this one."; //<< return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemyname +" could possibly win this one."
 }
     }
 
-for (var i=0;i<Enemies.length;i++)
+for (var i=0;i<Enemies.length;i++) // << for (var i=0;i<enemies.length;i++)
 {
-    var is_there_kryptonite;
+    var is_there_kryptonite; //<< var is_there_kryptonite:
     if (i%2=== 0) {
         is_there_kryptonite = true;
     } else {
         is_there_kryptonite = false;
     }
-    console.log(Who_Wins(is_there_kryptonite,Enemies[i]));
+    console.log(Who_Wins(is_there_kryptonite,Enemies[i])); //<< console.log(Who_Wins(is_there_kryptonite,enemies[i]));
 }
 
 function HowAttractedIsLoisLaneToMe ()
 {
     // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Math.random()*10)+1);
+    return Math.floor((Math.random()*10)+1); //<< return Math.floor((Mat.random()*10)+1);
 }
 
-console.log( HowAttractedIsLoisLaneToMe ()) ;
+console.log( HowAttractedIsLoisLaneToMe ()) ; // <<< consol.log( HowAttractedIsLoisLaneToMe ()) ;
 
 var clarkKent =true;
-var superman = false;
+var superman = false; //<< var superman false;
 
 while (clarkKent){
     console.log("I'm just a nerdy columnist");
